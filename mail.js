@@ -62,6 +62,10 @@ app.post("/sendEmail", async (req, res) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.send("<h1>Everything is fine over here</h1>");
+});
+
 app.listen(4000, () => {
   console.log(`App is running on Port : 4000`);
 });
